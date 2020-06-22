@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+.join{
+  background-image: url('../assets/WhatsApp\ Image\ 2020-05-10\ at\ 19.09.30.jpeg');
+  font-family: 'Rock Salt', cursive;
+  .join-form{
+    background-color: transparentize($color: #f2ed6f, $amount: 0.2) ;
+    width: 500px;
+    padding: 20px;
+  }
+}
+
+.new-trainer{
+  background-image: url('../assets/WhatsApp\ Image\ 2020-05-10\ at\ 18.54.44.jpeg');
+  background-size: cover;
+  font-family: 'Rock Salt', cursive;
+  font-weight: 700;
+  .new-form{
+    background-color: transparentize($color: #f2ed6f, $amount: 0.2) ;
+    width: 500px;
+    padding: 20px;
+  }
+}
+
+.single{
+  background-color: #dddddd;
+  font-family: 'Rock Salt', cursive;
+  .single-2{
+    background-color: transparentize($color: #f2ed6f, $amount: 0.2) ;
+    width: 740px;
+  }
+  .single-col{
+    width: 700px;
+  }
+  
+  .single-title{
+    margin-left: 25px;
+    padding-top: 20px;
+  }
+}
+
+
+$navbar-item-color: #1f4068;
+
+
+@import '~bulma/bulma.sass';
+
+.home{
+  background-image: url('../assets/WhatsApp\ Image\ 2020-05-10\ at\ 18.58.08.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: initial;
+  font-family: 'Sedgwick Ave Display', cursive;
+  height: 830px;
+  .sneaker-div{
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-bottom: 500px;
+    .sneaker-name{
+      font-size: 50px;
+      color: #f2ed6f;
+      margin: 0;
+    }
+  }
+ 
+}
+
+.navbar{
+  background-color: #f2ed6f;
+  font-family: 'Rock Salt', cursive;
+  color: white;
+}
+
+.card {
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  background-color: transparentize($color: #f2ed6f, $amount: 0.6);
+  .card-content{
+    margin: auto;
+    text-align: center;
+  }
+  
+  .card-image{
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+}
+
+.login{
+  font-family: 'Rock Salt', cursive;
+  background-color: #dddddd;
+  display: flex;
+  .login-form{
+    background-color: transparentize($color: #f2ed6f, $amount: 0.2) ;
+    width: 500px;
+    padding: 20px;
+    height: 300px;
+  }
+}
+
+.show-all{
+  background-color: #dddddd;
+  .card-name{
+    color: #43d8c9;
+  }
+}
+
+hr{
+  background-color: #1f4068;
+}
+
+.show-img{
+  margin-left: 25px;
+}
+
+.edit{
+  background-color: #dddddd;
+  font-family: 'Rock Salt', cursive;
+}
+
+.reg{
+  color: #43d8c9;
+}
+
+.comment-button{
+  margin-left: 15px;
+}
