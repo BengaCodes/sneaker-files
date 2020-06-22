@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "seed": "node db/seeds.js"
+    "start": "node index.js",
+    "seed": "node db/seeds.js",
+    "serve": "webpack-dev-server --mode=development",
+    "build": "webpack -p"
   },
   "author": "",
   "license": "ISC",

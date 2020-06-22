@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const app = express()
 const logger = require('./lib/logger')
-const port = 8000
+const port = process.env.PORT || 8000
 const router = require('./config/routes')
 const dbURI = 'mongodb://localhost/trainers'
 
