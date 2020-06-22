@@ -5,7 +5,7 @@ const app = express()
 const logger = require('./lib/logger')
 const port = process.env.PORT || 8000
 const router = require('./config/routes')
-const dbURI = 'mongodb://localhost/trainers'
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/trainers'
 
 mongoose.connect(dbURI, // * If connection to mongo works, we should see "Mongo is connected log in terminal"
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
