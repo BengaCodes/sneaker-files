@@ -12,6 +12,7 @@ async function register(req, res){
 }
 
 
+
 async function login (req, res) {
   try {
     // * find a user by their email

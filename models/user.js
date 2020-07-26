@@ -59,3 +59,4 @@ userSchema
 userSchema.plugin(require('mongoose-unique-validator'))
 
 module.exports = mongoose.model('User', userSchema)
+

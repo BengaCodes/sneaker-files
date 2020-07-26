@@ -20,7 +20,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.12",
     "mongoose-unique-validator": "^2.0.3",
-    "node": "^14.4.0",
     "nodemon": "^2.0.4"
   }
 }
