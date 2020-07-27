@@ -23,4 +23,9 @@ app.use('/api', router)
 // * Start at model.js
 
 
+// if (process.env.NODE_ENV === 'production') {
+
+// }
+
+
 app.listen(port, () => console.log(`Express is listening on port ${port}`))
