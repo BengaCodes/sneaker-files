@@ -20,14 +20,17 @@ To build a RESTful Express API app where users can upload and share their latest
 * Once my I confirmed my server was working fine. I created the models folder which will house my trainers and user models. 
 
 * I started off with my user model using the mongoose Schema class as below:
+```
 const userSchema = new Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true }
 })
+```
 The password confirmation was built using a .virtual method I had learnt in class earlier on that day and the 3rd party package bcrypt to encrypt the user password and then later compare it with the now hashed password to check for a match.
 
 * The trainers model followed in a similar fashion but more straightforward without the need for any methods to generate virtual fields or 3rd party libraries. 
+```
 const trainerSchema = new mongoose.Schema({
   name: { type: String, required: true },
   brand: { type: String, required: true },
@@ -40,6 +43,7 @@ const trainerSchema = new mongoose.Schema({
 }, {
   timestamps: true
 })
+```
 
 * Next step I took was setting up the controllers folder that will house my functions that perform the CRUD actions. 
   * I started off with the auth.js file where my asynchronous functions to create a user and login a user are. Once I wrote each function, I would then export out using modules.exports. Login also required the 3rd party package jsonwebtoken, to help allocate the user with an access token upon login
