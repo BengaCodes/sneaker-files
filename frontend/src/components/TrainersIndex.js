@@ -34,7 +34,7 @@ class TrainersIndex extends React.Component{
       <section className="show-all section">
       <div className="container">
         <div className="columns is-multiline">
-         {trainers.map(trainer => 
+          {trainers.map(trainer => 
           <TrainerCard 
           key={trainer._id}
           {...trainer}
