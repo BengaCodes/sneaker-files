@@ -9,7 +9,9 @@ To build a RESTful Express API app where users can upload and share their latest
 
 3 days whilst learning how to build MERN stack apps. The objective was to take each thing learned from a particular day and implement it in the app.
 
-## Technologies - React, Express, Node.js, JavaScript, MongoDB, Mongoose
+# Technologies - 
+
+## React, Express, Node.js, JavaScript, MongoDB, Mongoose
 
 ## The Project:
 
