@@ -1,6 +1,8 @@
 
 # SNEAKER-FILES - GA HOMEWORK/SIDE PROJECT
 
+## Deployed project - sneeka-files.herokuapp.com
+
 ## Objective - 
 
 To build a RESTful Express API app where users can upload and share their latest trainers with other users.
