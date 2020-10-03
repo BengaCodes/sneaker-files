@@ -16,7 +16,7 @@ const Home = () => {
   <footer className="footer">
   <div className="content has-text-centered">
     <p>
-      <strong>Sneakers Portfolio</strong> by <a href="https://www.linkedin.com/in/benga-olasebikan" target="_blank">Benga</a>
+      <strong>Sneakers Portfolio</strong> by <a href="https://www.linkedin.com/in/benga-olasebikan" target="_blank" rel="noopener noreferrer">Benga</a>
     </p>
   </div>
 </footer>

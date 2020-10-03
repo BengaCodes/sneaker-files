@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node index",
+    "dev": "nodemon index",
+    "frontend": "npm start --prefix frontend",
+    "server": "concurrently \"npm run dev\" \"npm run frontend\"",
     "seed": "node db/seeds.js",
-    "serve": "webpack-dev-server --mode=development",
-    "build": "webpack -p"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.3",
     "jsonwebtoken": "^8.5.1",

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
+import {isAuthenticated, isOwner} from '../lib/auth'
 
 // ? Component to show a single trainer on TrainerShow page.
 
@@ -30,10 +30,10 @@ const ShowATrainer = ({name, brand, onClick, color, size, price, image, descript
           <hr />
           <p><strong>Price: </strong> £{price}</p>
           <hr />
-          <Link to={`/trainers/${_id}/edit`} className="button is-primary">Edit</Link>
+          {isAuthenticated() && isOwner() && <Link to={`/trainers/${_id}/edit`} className="button is-primary">Edit</Link>}
           <hr />
-          <button onClick={() => {if (window.confirm("Are you sure?")) onClick()}} className="button is-danger">Delete</button>
-          <Link to={`/trainers/${_id}/comments`} className=" comment-button button is-dark">Add Comment</Link>
+          {isAuthenticated() && isOwner() && <button onClick={() => {if (window.confirm("Are you sure?")) onClick()}} className="button is-danger">Delete</button>}
+          {isAuthenticated() && <Link to={`/trainers/${_id}/comments`} className=" comment-button button is-dark">Add Comment</Link>}
         </div>
       </div>
     </div>

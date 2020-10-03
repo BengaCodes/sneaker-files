@@ -28,7 +28,6 @@ const App = () => {
         <Route path="/trainers" component={TrainersIndex} />
       </Switch>
     </BrowserRouter>
-    
   )
 }
 

@@ -14,7 +14,7 @@ const userSchema = new Schema({
 userSchema.virtual('createdTrainers', {
   ref: 'Trainer',
   localField: '_id', 
-  foreignField: 'user'
+  foreignField: 'User'
 })
 
 userSchema
